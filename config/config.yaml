@@ -1,0 +1,12 @@
+# this config.yaml file countain all the paths of pipe lines 
+
+
+
+artifacts_root: artifacts    # To create atrifact folder 
+
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion        # root path of data ingestion  
+  source_URL: https://github.com/Arqamansari23/Data/raw/main/Chicken-fecal-images%20(1).zip    # path of githib where zip data is palced 
+  local_data_file: artifacts/data_ingestion/data.zip     # loading the zip data into this path 
+  unzip_dir: artifacts/data_ingestion    # path of unzip data 
