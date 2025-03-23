@@ -1,3 +1,23 @@
+# BAsic MOdel parameters 
 
 
-key: val
+
+
+
+
+
+AUGMENTATION: True    # we want image Augmentation  
+
+IMAGE_SIZE: [224, 224, 3] # as per VGG 16 model
+
+BATCH_SIZE: 16    # batch size is 16 
+
+INCLUDE_TOP: False     # means we need to add custom layers at bottom 
+
+EPOCHS: 1    # only one epoch 
+
+CLASSES: 2    # Binary Classification 
+
+WEIGHTS: imagenet     # weights are used of imagenet
+
+LEARNING_RATE: 0.01    # learning rate is 0.01

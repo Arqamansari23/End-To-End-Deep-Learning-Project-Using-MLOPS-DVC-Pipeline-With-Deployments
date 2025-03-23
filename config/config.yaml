@@ -4,9 +4,43 @@
 
 artifacts_root: artifacts    # To create atrifact folder 
 
-
+# All paths od Data Ingestion 
 data_ingestion:
-  root_dir: artifacts/data_ingestion        # root path of data ingestion  
+  root_dir: artifacts/data_ingestion        # root path of data ingestion  should be created first 
   source_URL: https://github.com/Arqamansari23/Data/raw/main/Chicken-fecal-images%20(1).zip    # path of githib where zip data is palced 
   local_data_file: artifacts/data_ingestion/data.zip     # loading the zip data into this path 
   unzip_dir: artifacts/data_ingestion    # path of unzip data 
+
+
+
+
+
+
+# All the Paths of base models 
+prepare_base_model:
+  root_dir: artifacts/prepare_base_model    # root directory for base model should be created 
+  base_model_path: artifacts/prepare_base_model/base_model.h5   # base model of VGG-16 without custom layers 
+  updated_base_model_path: artifacts/prepare_base_model/base_model_updated.h5   # Final model with custom layers 
+
+
+
+# All paths for Callbacks
+prepare_callbacks:
+  root_dir: artifacts/prepare_callbacks   # root directories for callbacks 
+  tensorboard_root_log_dir: artifacts/prepare_callbacks/tensorboard_log_dir  # All logs of tensorboard
+  checkpoint_model_filepath: artifacts/prepare_callbacks/checkpoint_dir/model.h5   # final trained model on our custom data
+
+
+
+
+training:
+  root_dir: artifacts/training
+  trained_model_path: artifacts/training/model.h5
+
+
+
+
+
+
+
+
